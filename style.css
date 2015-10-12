@@ -1,0 +1,59 @@
+/*******************************
+
+  Online Reg Steps Styling
+
+*******************************/
+
+nav.steps { text-align:center; margin:1em 0; }
+
+h2.current { padding:0.5em; background:#eee; margin-top:0; }
+
+.box { border:solid 1px #ccc; border-radius:0.3em; padding:1em; margin-bottom:1em;}
+
+label { max-width:65%; }
+.price { float:right; }
+
+.delname { margin-bottom:1em; }
+.delname h2 { margin:0; font-weight:normal; }
+.delbtns { text-align:right; }
+.delbtns a { padding-left:1em; }
+.delbtns a .glyphicon { font-size:1.5em; top:0.2em; }
+.deltotal { margin-top:1em; font-size:0.9em; }
+
+.options .form-group { padding:0.5em; border:solid 1px; }
+.options .form-group.bg-warning { border-color:#eda; }
+.options .form-group.bg-success { border-color:#bdb; }
+
+.deladd { margin-bottom:2em; }
+
+.totalbox div { margin:1em 0; }
+input.mac { width:100%; }
+.totalbox .proceed { margin:2em 0; }
+.totalbox .total, .totalbox .saved, .totalbox .full { margin:0; }
+.saved .price { font-weight:bold; }
+.total .price { font-weight:bold; font-size:1.2em; }
+
+.secureseal { text-align:center; }
+
+/* Small devices */
+@media only screen and (max-width: 768px) {
+
+h2.current, .delname, .delbtns { text-align:center; }
+.delname, .delbtns, .deltotal { margin:0.7em 0; }
+
+}
+
+/* Medium devices */
+@media only screen and (max-width: 992px) {
+
+.totalbox .proceed a.btn, .deltotal label { font-size:0.9em; } 
+.totalbox label, .totalbox .subtotal .price { font-size:0.8em; }
+.deltotal label, .totalbox label { max-width:60%; }
+.totalbox .proceed a.btn { font-weight:bold; }
+
+}
+
+/* Large devices */
+@media only screen and (min-width: 1200px) {
+
+}

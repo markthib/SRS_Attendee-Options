@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Attendee Options Demo</title>
+ 
+	<!-- CSS -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+	<div class="srs content container">
+		
+		<h1 class="text-center">Secure Online Registration</h1>
+
+		<nav class="steps">
+		  <ul class="pagination pagination-lg">
+		    <li class="hidden-xs">
+		      <a href="#" aria-label="Previous">
+		        <span aria-hidden="true">&laquo;</span>
+		      </a>
+		    </li>
+		    <li><a href="#"><span class="hidden-xs hidden-sm">1. Attendee </span>Info</a></li>
+		    <li class="active"><a href="#"><span class="hidden-xs hidden-sm">2. Registration </span>Details</a></li>
+		    <li class="disabled"><a href="#"><span class="hidden-xs hidden-sm">3. Review &amp; </span>Pay</a></li>
+		    <li class="disabled"><a href="#"><span class="hidden-xs hidden-sm">4. </span>Confirmation</a></li>
+		    <li class="disabled hidden-xs">
+		      <a href="#" aria-label="Next">
+		        <span aria-hidden="true">&raquo;</span>
+		      </a>
+		    </li>
+		  </ul>
+		</nav>	
+	
+		<div class="row">
+		  <div class="col-xs-12 col-sm-8 srs-section">
+			
+		  	<h2 class="current">Registration Details</h2>
+		
+			<div class="container-fluid box delbox">
+				<div class="row delname">
+					<div class="col-xs-12 col-sm-6">
+						<h2>Bob Q Gibson</h2>
+					</div>
+					<div class="col-xs-12 col-sm-6 delbtns">					
+						<a class="remove text-danger" href="#"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> <strong> Remove</strong></a>
+						<a class="edit text-primary" href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> <strong>Edit Info</strong></a>
+					</div>
+				</div>
+				<div class="row details">
+					<div class="col-xs-12 col-sm-6 package">
+						<label>Package Selected:</label>
+						<select class="form-control">
+						  <option>2 Day Main Conference</option>
+						  <option>3 Day: Main Conference + Focus Day</option>
+						</select>
+						<div class="container-fluid deltotal">
+							<div class="total">
+								<label>Package Price</label>
+								<span class="price text-success">$3799.00</span>
+							</div>
+							<div class="saved">
+								<label>Early Bird Discount</label>
+								<span class="price text-danger">-$1000.00</span>
+							</div>
+							<div class="saved">
+								<label>Group of 2 Discount</label>
+								<span class="price text-danger">-$200.00</span>
+							</div>
+							<div class="full">
+								<label>Standard Price</label>
+								<span class="price">$4,999.00</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 options">
+											
+						<div class="form-group bg-warning">
+							<h4>Select Package Options <span class="glyphicon glyphicon-alert" aria-hidden="true"></span></h4>
+							<label class="control-label">Workshop Day (Feb 22, 2016)</label>
+							<div class="radio">
+							  <label>
+							    <input type="radio" name="del1Radios" id="del1Radios1" value="option1">
+							    Email Marketing &amp; CRM Summit (Retailer Only)
+							  </label>
+							</div>
+							<div class="radio">
+							  <label>
+							    <input type="radio" name="del1Radios" id="del1Radios2" value="option2">
+							    Online Media &amp; Search Summit (Retailer Only)
+							  </label>
+							</div>
+							<div class="radio">
+							  <label>
+							    <input type="radio" name="del1Radios" id="del1Radios3" value="option3">
+							    Mobile Summit
+							  </label>
+							</div>
+							<div class="radio">
+							  <label>
+							    <input type="radio" name="del1Radios" id="del1Radios4" value="option4">
+							    UX, Merchandising &amp; Design Summit
+							  </label>
+							</div>
+						</div>
+					</div>													
+				</div>
+			</div>
+
+			<div class="container-fluid box delbox">
+				<div class="row delname">
+					<div class="col-xs-12 col-sm-6">
+						<h2>Mark Thibodeaux</h2>
+					</div>
+					<div class="col-xs-12 col-sm-6 delbtns">					
+						<a class="remove text-danger" href="#"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> <strong> Remove</strong></a>
+						<a class="edit text-primary" href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> <strong>Edit Info</strong></a>
+					</div>
+				</div>
+				<div class="row details">
+					<div class="col-xs-12 col-sm-6 package">
+						<label>Package Selected:</label>
+						<select class="form-control">
+						  <option>2 Day Main Conference</option>
+						  <option>3 Day: Main Conference + Focus Day</option>
+						</select>
+						<div class="container-fluid deltotal">
+							<div class="total">
+								<label>Package Price</label>
+								<span class="price text-success">$3799.00</span>
+							</div>
+							<div class="saved">
+								<label>Early Bird Discount</label>
+								<span class="price text-danger">-$1000.00</span>
+							</div>
+							<div class="saved">
+								<label>Group of 2 Discount</label>
+								<span class="price text-danger">-$200.00</span>
+							</div>
+							<div class="full">
+								<label>Standard Price</label>
+								<span class="price">$4,999.00</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 options">
+											
+						<div class="form-group bg-warning">
+							<h4>Select Package Options <span class="glyphicon glyphicon-alert" aria-hidden="true"></span></h4>
+							<label class="control-label">Workshop Day (Feb 22, 2016)</label>
+							<div class="radio">
+							  <label>
+							    <input type="radio" name="del2Radios" id="del2Radios1" value="option1">
+							    Email Marketing &amp; CRM Summit (Retailer Only)
+							  </label>
+							</div>
+							<div class="radio">
+							  <label>
+							    <input type="radio" name="del2Radios" id="del2Radios2" value="option2">
+							    Online Media &amp; Search Summit (Retailer Only)
+							  </label>
+							</div>
+							<div class="radio">
+							  <label>
+							    <input type="radio" name="del2Radios" id="del2Radios3" value="option3">
+							    Mobile Summit
+							  </label>
+							</div>
+							<div class="radio">
+							  <label>
+							    <input type="radio" name="del2Radios" id="del2Radios4" value="option4">
+							    UX, Merchandising &amp; Design Summit
+							  </label>
+							</div>
+						</div>
+					</div>													
+				</div>
+			</div>
+			
+			<div class="deladd">
+				<a class="btn btn-lg btn-block btn-warning"><span class="glyphicon glyphicon-plus"></span> Add Another Registrant</a>
+			</div>
+					
+		  </div>
+		
+		  <div class="col-xs-12 col-sm-4 srs-side">
+
+		  	<div class="container-fluid box totalbox bg-info">
+				<div class="subtotal">
+					<h3>
+						<label>Subtotal</label>
+						<span class="price">$6,678.00</span>
+					</h3>
+				</div>
+				<div class="taxes">
+					<h4>
+						<label>Estimated Taxes &amp; Fees</label>
+						<span class="price">$0.72</span>
+					</h4>
+				</div>
+				<div class="mac">
+				  	<input type="text" class="form-control" placeholder="Discount Code?">
+				</div>
+				<div class="proceed">
+					<a class="btn btn-lg btn-block btn-success">Proceed to Checkout &gt;</a>
+				</div>
+				<div class="total">
+					<label>Current Total</label>
+					<span class="price text-success">$6,678.72</span>
+				</div>
+				<div class="saved">
+					<label>Discounts</label>
+					<span class="price text-danger">-$3,321.00</span>
+				</div>
+				<div class="full">
+					<label>Standard Price</label>
+					<span class="price">$9,998.00</span>
+				</div>
+			</div>
+			
+			<div class="container-fluid secureseal">
+				<img src="secureseal.png">
+			</div>
+			
+		  </div>
+		</div>		
+		
+	</div>
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function() {
+		    $(".delbox .options .form-group input").click(function() {
+		        $(this).parents(".form-group").removeClass("bg-warning");
+		        $(this).parents(".form-group").addClass("bg-success");
+		    });
+		});
+	</script>
+
+  </body>
+
+</html>
