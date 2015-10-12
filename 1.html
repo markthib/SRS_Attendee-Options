@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Attendee Options Demo</title>
+ 
+	<!-- CSS -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+	<div class="srs content container">
+		
+		<h1 class="text-center">Secure Online Registration</h1>
+
+		<nav class="steps">
+		  <ul class="pagination pagination-lg">
+		    <li class="disabled hidden-xs">
+		      <a href="#" aria-label="Previous">
+		        <span aria-hidden="true">&laquo;</span>
+		      </a>
+		    </li>
+		    <li class="active"><a href="#"><span class="hidden-xs hidden-sm">1. Attendee </span>Info</a></li>
+		    <li class="disabled"><a href="#"><span class="hidden-xs hidden-sm">2. Registration </span>Details</a></li>
+		    <li class="disabled"><a href="#"><span class="hidden-xs hidden-sm">3. Review &amp; </span>Pay</a></li>
+		    <li class="disabled"><a href="#"><span class="hidden-xs hidden-sm">4. </span>Receipt</a></li>
+		    <li class="disabled hidden-xs">
+		      <a href="#" aria-label="Next">
+		        <span aria-hidden="true">&raquo;</span>
+		      </a>
+		    </li>
+		  </ul>
+		</nav>	
+	
+		<div class="row">
+
+		  <div class="col-xs-12 col-sm-8 srs-section">
+			
+		  	<h2 class="current">Attendee Information</h2>
+		
+			<div class="container-fluid box infobox">
+			
+			    <div class="row">
+
+			      <div class="col-xs-12 col-sm-6 form-group">
+			        <label class="sr-only" for="fname">First Name</label>
+			        <input type="text" class="form-control" id="fname" placeholder="First Name">
+			      </div>
+			      <div class="col-xs-12 col-sm-6 form-group">
+			        <label class="sr-only" for="lname">Last Name</label>
+			        <input type="text" class="form-control" id="lname" placeholder="Last Name">
+			      </div>
+			      <div class="col-xs-12 col-sm-6 form-group">
+			        <label class="sr-only" for="jtitle">Job Title</label>
+			        <input type="text" class="form-control" id="jtitle" placeholder="Job Title / Rank">
+			      </div>
+			      <div class="col-xs-12 col-sm-6 form-group">
+			        <label class="sr-only" for="phone">Phone</label>
+			        <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+			      </div>
+			      <div class="col-xs-12form-group">
+			        <label class="sr-only" for="phone">Email</label>
+			        <input type="email" class="form-control" id="email" placeholder="email@address.com">
+			      </div>
+
+			      <a class="btn btn-lg btn-success" href="/">Continue &gt;</a>
+			    
+			    </div>
+
+			</div>
+
+
+			</div>
+							
+		  </div>
+		
+		  <div class="col-xs-12 col-sm-4 srs-side">
+
+		  	<div class="container-fluid box totalbox bg-info">
+				<div class="subtotal">
+					<h3>
+						<label>Subtotal</label>
+						<span class="price">$6,678.00</span>
+					</h3>
+				</div>
+				<div class="taxes">
+					<h4>
+						<label>Estimated Taxes &amp; Fees</label>
+						<span class="price">$0.72</span>
+					</h4>
+				</div>
+				<div class="mac">
+				  	<input type="text" class="form-control" placeholder="Discount Code?">
+				</div>
+				<div class="proceed">
+					<a class="btn btn-lg btn-block btn-success disabled">Proceed to Checkout &gt;</a>
+				</div>
+				<div class="total">
+					<label>Current Total</label>
+					<span class="price text-success">$6,678.72</span>
+				</div>
+				<div class="saved">
+					<label>Discounts</label>
+					<span class="price text-danger">-$3,321.00</span>
+				</div>
+				<div class="full">
+					<label>Standard Price</label>
+					<span class="price">$9,998.00</span>
+				</div>
+			</div>
+			
+			<div class="container-fluid secureseal">
+				<img src="secureseal.png" alt="Norton Secured SSL Certificate">
+			</div>
+			
+		  </div> <!-- srs-side -->
+
+		</div>		
+		
+	</div>
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" type="text/javascript"></script>
+
+  </body>
+
+</html>
