@@ -1,7 +1,5 @@
 /*******************************
-
-  Online Reg Steps Styling
-
+  Online Reg Common
 *******************************/
 
 nav.steps { text-align:center; margin:1em 0; }
@@ -12,6 +10,32 @@ h2.current { padding:0.5em; background:#eee; margin-top:0; }
 
 label { max-width:65%; }
 .price { float:right; }
+
+
+/*******************************
+  Right Column
+*******************************/
+
+.totalbox div { margin:1em 0; }
+input.mac { width:100%; }
+.totalbox .proceed { margin:2em 0; }
+.totalbox .total, .totalbox .saved, .totalbox .full { margin:0; }
+.saved .price { font-weight:bold; }
+.total .price { font-weight:bold; font-size:1.2em; }
+
+.secureseal { text-align:center; }
+
+
+/*******************************
+  Step 2: Reg Details
+*******************************/
+
+.infobox .form-control-feedback { top:0; right:1em }
+
+
+/*******************************
+  Step 2: Reg Details
+*******************************/
 
 .delname { margin-bottom:1em; }
 .delname h2 { margin:0; font-weight:normal; }
@@ -26,31 +50,23 @@ label { max-width:65%; }
 
 .deladd { margin-bottom:2em; }
 
-.totalbox div { margin:1em 0; }
-input.mac { width:100%; }
-.totalbox .proceed { margin:2em 0; }
-.totalbox .total, .totalbox .saved, .totalbox .full { margin:0; }
-.saved .price { font-weight:bold; }
-.total .price { font-weight:bold; font-size:1.2em; }
 
-.secureseal { text-align:center; }
+/*******************************
+  Media Queries
+*******************************/
 
 /* Small devices */
 @media only screen and (max-width: 768px) {
-
-h2.current, .delname, .delbtns { text-align:center; }
-.delname, .delbtns, .deltotal { margin:0.7em 0; }
-
+    h2.current, .delname, .delbtns { text-align:center; }
+    .delname, .delbtns, .deltotal { margin:0.7em 0; }
 }
 
 /* Medium devices */
 @media only screen and (max-width: 992px) {
-
-.totalbox .proceed a.btn, .deltotal label { font-size:0.9em; } 
-.totalbox label, .totalbox .subtotal .price { font-size:0.8em; }
-.deltotal label, .totalbox label { max-width:60%; }
-.totalbox .proceed a.btn { font-weight:bold; }
-
+    .totalbox .proceed a.btn, .deltotal label { font-size:0.9em; } 
+    .totalbox label, .totalbox .subtotal .price { font-size:0.8em; }
+    .deltotal label, .totalbox label { max-width:60%; }
+    .totalbox .proceed a.btn { font-weight:bold; }
 }
 
 /* Large devices */
