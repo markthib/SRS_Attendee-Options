@@ -6,10 +6,12 @@ nav.steps { text-align:center; margin:1em 0; }
 
 h2.current { padding:0.5em; background:#eee; margin-top:0; }
 
-.box { border:solid 1px #ccc; border-radius:0.3em; padding:1em; margin-bottom:1em;}
+.panel { margin-bottom:1em;}
 
 label { max-width:65%; }
 .price { float:right; }
+
+.container-fluid > div { clear:both; }
 
 
 /*******************************
@@ -55,18 +57,19 @@ input.mac { width:100%; }
   Media Queries
 *******************************/
 
-/* Small devices */
-@media only screen and (max-width: 768px) {
-    h2.current, .delname, .delbtns { text-align:center; }
-    .delname, .delbtns, .deltotal { margin:0.7em 0; }
-}
-
 /* Medium devices */
 @media only screen and (max-width: 992px) {
     .totalbox .proceed a.btn, .deltotal label { font-size:0.9em; } 
     .totalbox label, .totalbox .subtotal .price { font-size:0.8em; }
     .deltotal label, .totalbox label { max-width:60%; }
     .totalbox .proceed a.btn { font-weight:bold; }
+}
+
+/* Small devices */
+@media only screen and (max-width: 768px) {
+    h2.current, .delname, .delbtns { text-align:center; }
+    .delname, .delbtns, .deltotal { margin:0.7em 0; }
+    .totalbox .proceed a.btn { font-size:1.5em; }
 }
 
 /* Large devices */
