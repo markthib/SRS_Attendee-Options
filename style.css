@@ -2,55 +2,73 @@
   Online Reg Common
 *******************************/
 
-nav.steps { text-align:center; margin:1em 0; }
+.srs nav.steps { text-align:center; margin:1em 0; }
 
-h2.current { padding:0.5em; background:#eee; margin-top:0; }
+.srs-section { padding-bottom:1em; }
 
-.panel { margin-bottom:1em;}
+.srs h2.current { padding:0.5em; background:#eee; margin-top:0; }
 
-label { max-width:65%; }
-.price { float:right; }
+.srs label { max-width:65%; }
 
-.container-fluid > div { clear:both; }
+.srs .price { float:right; }
+
+.srs .amounts > div { clear:both; }
 
 
 /*******************************
-  Right Column
+  Total Box
 *******************************/
 
-.totalbox div { margin:1em 0; }
-input.mac { width:100%; }
-.totalbox .proceed { margin:2em 0; }
-.totalbox .total, .totalbox .saved, .totalbox .full { margin:0; }
-.saved .price { font-weight:bold; }
-.total .price { font-weight:bold; font-size:1.2em; }
+/*** Common ***/
 
-.secureseal { text-align:center; }
+.srs .totalbox { border-radius:0.4em; padding-bottom:1em; border:solid 1px #ddf; }
+.srs .totalbox div { margin:1em 0; }
+.srs input.mac { width:100%; }
+.srs .totalbox .proceed { margin:2em 0; }
+.srs .totalbox .total, .srs .totalbox .saved, .srs .totalbox .full { margin:0; }
+
+.srs .secureseal { text-align:center; }
+
+
+/*** Right Column ***/
+
+
+/*** Final ***/
+.srs .saved .price { font-weight:bold; }
+.srs .total .price { font-weight:bold; font-size:1.2em; }
+
 
 
 /*******************************
   Step 2: Reg Details
 *******************************/
 
-.infobox .form-control-feedback { top:0; right:1em }
+.srs .infobox .form-control-feedback { top:0; right:1em }
 
 
 /*******************************
   Step 2: Reg Details
 *******************************/
 
-.delname { margin-bottom:1em; }
-.delname h2 { margin:0; font-weight:normal; }
-.delbtns { text-align:right; }
-.delbtns a { padding-left:1em; }
-.delbtns a .glyphicon { font-size:1.5em; top:0.2em; }
-.deltotal { margin-top:1em; font-size:0.9em; }
+.srs .delbox { border-color:#ddd; padding:1em;}
+.srs .delname h2 { margin:0; font-weight:normal; }
+.srs .delbtns { text-align:right; }
+.srs .delbtns a { padding-left:1em; }
+.srs .delbtns a .glyphicon { font-size:1.5em; top:0.2em; }
+.srs .deltotal { margin-top:1em; font-size:0.9em; }
 
-.options .form-group { padding:0.5em; border:solid 1px; }
-.options .form-group.bg-warning { border-color:#eda; }
-.options .form-group.bg-success { border-color:#bdb; }
+.srs .options .form-group { padding:0.5em; border:solid 1px; }
+.srs .options .form-group.bg-warning { border-color:#eda; }
+.srs .options .form-group.bg-success { border-color:#bdb; }
 
-.deladd { margin-bottom:2em; }
+.srs .deladd { margin-bottom:2em; }
+
+
+/*******************************
+  Step 3: Review & Pay
+*******************************/
+
+.srs .invoice label { max-width:100%; }
 
 
 /*******************************
@@ -59,17 +77,18 @@ input.mac { width:100%; }
 
 /* Medium devices */
 @media only screen and (max-width: 992px) {
-    .totalbox .proceed a.btn, .deltotal label { font-size:0.9em; } 
-    .totalbox label, .totalbox .subtotal .price { font-size:0.8em; }
-    .deltotal label, .totalbox label { max-width:60%; }
-    .totalbox .proceed a.btn { font-weight:bold; }
+    .srs .totalbox .proceed a.btn, .srs .deltotal label, .srs .delbtns { font-size:0.9em; } 
+    .srs .totalbox label, .srs .totalbox .subtotal .price { font-size:0.8em; }
+    .srs .deltotal label, .srs .totalbox label { max-width:60%; }
+    .srs .totalbox .proceed a.btn { font-weight:bold; }
 }
 
 /* Small devices */
 @media only screen and (max-width: 768px) {
-    h2.current, .delname, .delbtns { text-align:center; }
-    .delname, .delbtns, .deltotal { margin:0.7em 0; }
-    .totalbox .proceed a.btn { font-size:1.5em; }
+    .srs h2.current, .srs .delname, .srs .delbtns { text-align:center; }
+    .srs .delname, .srs .delbtns, .srs .deltotal { margin:0.7em 0; }
+    .srs .totalbox .proceed a.btn { font-size:1.5em; }
+    .srs .delbtns { font-size:1.2em }
 }
 
 /* Large devices */
