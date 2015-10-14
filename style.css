@@ -45,7 +45,7 @@
 
 .srs .delname h2 { margin:0; font-weight:normal; }
 .srs .delbtns { text-align:right; }
-.srs .delbtns a { padding-left:1em; }
+.srs .delbtns a { padding-left:1em; white-space:nowrap; }
 .srs .delbtns a .glyphicon { font-size:1.5em; top:0.2em; }
 .srs .deltotal { margin-top:1em; font-size:0.9em; }
 
@@ -74,7 +74,7 @@
 *******************************/
 
 /* Medium devices */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     .srs .totalbox .proceed a.btn, .srs .deltotal label, .srs .delbtns { font-size:0.9em; } 
     .srs .deltotal label, .srs .totalbox label { max-width:60%; }
     .srs .totalbox .proceed a.btn { font-weight:bold; }
@@ -83,13 +83,13 @@
 }
 
 /* Small devices */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .srs h2.current, .srs .delname, .srs .delbtns { text-align:center; }
     .srs .delname, .srs .delbtns, .srs .deltotal { margin:0.7em 0; }
     .srs .totalbox .proceed a.btn, .srs .totalfinal .total h3 { font-size:1.5em; }
-    .srs .delbtns { font-size:1.2em }
+    .srs .delbtns { font-size:1.1em }
     .srs-side .amounts > div { font-size:inherit; }
-    .srs-side .amounts .full, .srs-side .amounts h4 { font-size:initial; }
+    .srs-side .amounts .full, .srs-side .amounts h4, .srs .delbox .amounts { font-size:initial; }
 }
 
 /* Large devices */
