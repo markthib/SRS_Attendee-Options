@@ -68,7 +68,15 @@
   Step 3: Review & Pay
 *******************************/
 
-.srs .invoice label { max-width:100%; }
+.srs .panel-footer label { max-width:100%; }
+
+.srs .totalfinal .amounts div { margin:0; padding:0.3em; }
+.srs .totalfinal .full { font-size:1.2em; font-weight:bold; color:#555; }
+.srs .totalfinal .full .price { text-decoration:line-through; }
+.srs .totalfinal .saved, .srs .totalfinal .taxes { background:rgba(235,255,255,0.4); }
+.srs input.mac { width:100%; }
+.srs .totalfinal .finalbtns { margin:1em 0; }
+
 
 
 /*******************************
@@ -78,7 +86,7 @@
 /* Medium devices */
 @media only screen and (max-width: 992px) {
     .srs .totalbox .proceed a.btn, .srs .deltotal label, .srs .delbtns { font-size:0.9em; } 
-    .srs .totalbox label, .srs .totalbox .subtotal .price { font-size:0.8em; }
+    .srs-side .totalbox label, .srs-side .subtotal .price { font-size:0.8em; }
     .srs .deltotal label, .srs .totalbox label { max-width:60%; }
     .srs .totalbox .proceed a.btn { font-weight:bold; }
 }
@@ -87,7 +95,7 @@
 @media only screen and (max-width: 768px) {
     .srs h2.current, .srs .delname, .srs .delbtns { text-align:center; }
     .srs .delname, .srs .delbtns, .srs .deltotal { margin:0.7em 0; }
-    .srs .totalbox .proceed a.btn { font-size:1.5em; }
+    .srs .totalbox .proceed a.btn, .srs .totalfinal .total h3 { font-size:1.5em; }
     .srs .delbtns { font-size:1.2em }
 }
 
