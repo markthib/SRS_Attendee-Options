@@ -4,43 +4,36 @@
 
 .srs nav.steps { text-align:center; margin:1em 0; }
 
-.srs-section { padding-bottom:1em; }
-
 .srs h2.current { padding:0.5em; background:#eee; margin-top:0; }
 
-.srs label { max-width:65%; }
+.srs-section { padding-bottom:1em; }
 
-.srs .price { float:right; }
+.srs-section .panel { border-color:#ddd; padding:1em; }
 
-.srs .amounts > div { clear:both; }
+.srs .proceed { margin:1.5em 0 0; }
 
 
 /*******************************
-  Total Box
+  Amounts & Total Box
 *******************************/
 
-/*** Common ***/
-
 .srs .totalbox { border-radius:0.4em; padding-bottom:1em; border:solid 1px #ddf; }
-.srs .totalbox div { margin:1em 0; }
-.srs input.mac { width:100%; }
-.srs .totalbox .proceed { margin:2em 0; }
-.srs .totalbox .total, .srs .totalbox .saved, .srs .totalbox .full { margin:0; }
+
+.srs .amounts { margin-top:1em; }
+.srs .amounts > div { margin:0; clear:both; }
+
+.srs .amounts label { max-width:65%; }
+.srs .price { float:right; }
+
+.srs .totalbox .full { font-size:1.2em; font-weight:bold; color:#555; }
+.srs .saved .price { font-weight:bold; }
+.srs .total .price { font-weight:bold; font-size:1.2em; }
 
 .srs .secureseal { text-align:center; }
 
 
-/*** Right Column ***/
-
-
-/*** Final ***/
-.srs .saved .price { font-weight:bold; }
-.srs .total .price { font-weight:bold; font-size:1.2em; }
-
-
-
 /*******************************
-  Step 2: Reg Details
+  Step 1: Attendee Info
 *******************************/
 
 .srs .infobox .form-control-feedback { top:0; right:1em }
@@ -50,7 +43,6 @@
   Step 2: Reg Details
 *******************************/
 
-.srs .delbox { border-color:#ddd; padding:1em;}
 .srs .delname h2 { margin:0; font-weight:normal; }
 .srs .delbtns { text-align:right; }
 .srs .delbtns a { padding-left:1em; }
@@ -70,14 +62,12 @@
 
 .srs .panel-footer label { max-width:100%; }
 
-.srs .totalfinal .amounts div { margin:0; padding:0.3em; }
-.srs .totalfinal .full { font-size:1.2em; font-weight:bold; color:#555; }
-.srs .totalfinal .full .price { text-decoration:line-through; }
+.srs .totalfinal .amounts > div { padding:0.3em; }
 .srs .totalfinal .saved, .srs .totalfinal .taxes { background:rgba(235,255,255,0.4); }
-.srs input.mac { width:100%; }
-.srs .totalfinal .finalbtns { margin:1em 0; }
+.srs .totalfinal .finalbtns, .srs .totalfinal .finalbtns .row { margin:1em 0; }
 
-
+.srs .finalbtns .glyphicon { position:absolute; right:1em; top:0.4em; font-size:2em; } 
+.srs .finalbtns .back .glyphicon { font-size:1.7em; right:auto; left:1.2em; top:0.6em; } 
 
 /*******************************
   Media Queries
@@ -86,9 +76,10 @@
 /* Medium devices */
 @media only screen and (max-width: 992px) {
     .srs .totalbox .proceed a.btn, .srs .deltotal label, .srs .delbtns { font-size:0.9em; } 
-    .srs-side .totalbox label, .srs-side .subtotal .price { font-size:0.8em; }
     .srs .deltotal label, .srs .totalbox label { max-width:60%; }
     .srs .totalbox .proceed a.btn { font-weight:bold; }
+    .srs-side .amounts > div { font-size:0.9em; }
+    .srs-side .amounts .full, .srs-side .amounts h4 { font-size:inherit; }
 }
 
 /* Small devices */
@@ -97,6 +88,8 @@
     .srs .delname, .srs .delbtns, .srs .deltotal { margin:0.7em 0; }
     .srs .totalbox .proceed a.btn, .srs .totalfinal .total h3 { font-size:1.5em; }
     .srs .delbtns { font-size:1.2em }
+    .srs-side .amounts > div { font-size:inherit; }
+    .srs-side .amounts .full, .srs-side .amounts h4 { font-size:initial; }
 }
 
 /* Large devices */
