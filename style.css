@@ -86,13 +86,13 @@
 @media only screen and (max-width: 767px) {
     .srs h2.current, .srs .delname, .srs .delbtns { text-align:center; }
     .srs .delname, .srs .delbtns, .srs .deltotal { margin:0.7em 0; }
-    .srs .totalbox .proceed a.btn, .srs .totalfinal .total h3 { font-size:1.5em; }
+    .srs .totalbox .proceed a.btn, .srs .totalfinal .total h3 { font-size:1.3em; }
     .srs .delbtns { font-size:1.1em }
     .srs-side .amounts > div { font-size:inherit; }
     .srs-side .amounts .full, .srs-side .amounts h4, .srs .delbox .amounts { font-size:initial; }
 }
 
-/* Large devices */
-@media only screen and (min-width: 1200px) {
-
+/* Older Mobile */
+@media only screen and (max-width: 321px) {
+.srs nav.steps a { font-size:initial; }
 }
